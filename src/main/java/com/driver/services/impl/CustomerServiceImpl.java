@@ -53,9 +53,9 @@ public class CustomerServiceImpl implements CustomerService {
 		Driver driver=null;
 		for(Driver workingdriver:driverList){
 			if(workingdriver.getCab().getAvailable()){
-				if ((driver == null) || workingdriver.getDriverId() < driver.getDriverId()) {
+				workingdriver.getCab().setAvailable(false);
 					driver = workingdriver;
-				}
+					break;
 			}
 		}
 		if(driver==null){

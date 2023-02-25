@@ -14,7 +14,7 @@ class TripBooking{
     private String toLocation;
     private int distanceInKm;
     private int bill;
-    TripStatus Status;
+    TripStatus status;
 
 
     //CustomerMapping(parent)
@@ -72,11 +72,11 @@ class TripBooking{
     }
 
     public TripStatus getStatus() {
-        return Status;
+        return status;
     }
 
     public void setStatus(TripStatus tripStatus) {
-        this.Status = tripStatus;
+        this.status = tripStatus;
     }
 
     public Customer getCustomer() {
