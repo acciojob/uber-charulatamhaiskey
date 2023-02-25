@@ -39,4 +39,10 @@ public class Admin{
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public Admin(int adminId, String username, String password) {
+        this.adminId = adminId;
+        this.username = username;
+        this.password = password;
+    }
 }

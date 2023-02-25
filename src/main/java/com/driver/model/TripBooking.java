@@ -94,4 +94,15 @@ class TripBooking{
     public void setDriver(Driver driver) {
         this.driver = driver;
     }
+
+    public TripBooking(int tripBookingId, String fromLocation, String toLocation, int distanceInKm, int bill, TripStatus status, Customer customer, Driver driver) {
+        this.tripBookingId = tripBookingId;
+        this.fromLocation = fromLocation;
+        this.toLocation = toLocation;
+        this.distanceInKm = distanceInKm;
+        this.bill = bill;
+        this.status = status;
+        this.customer = customer;
+        this.driver = driver;
+    }
 }
